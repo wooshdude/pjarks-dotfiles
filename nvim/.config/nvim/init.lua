@@ -120,6 +120,8 @@ vim.keymap.set("n", "<S-tab>", ":BufferPrevious<Return>", { desc = "Previous tab
 vim.keymap.set("n", "tl", ":BufferMoveNext<Return>", { desc = "Shift tab right", silent = true })
 vim.keymap.set("n", "th", ":BufferMovePrevious<Return>", { desc = "Shift tab left", silent = true })
 
+-- Run Commands
+
 -- Cargo run
 local function set_rust_keybindings()
 	vim.keymap.set(
@@ -140,6 +142,15 @@ local function set_python_keybindings()
 	)
 end
 
+local function set_csharp_keybindings()
+	vim.keymap.set(
+		"n",
+		"<leader>vv",
+		":terminal dotnet run<Return>i",
+		{ desc = "DotNet Run", buffer = true, silent = true }
+	)
+end
+
 -- Set up an autocmd group to run the function on BufRead or BufNewFile for Rust files
 vim.api.nvim_create_augroup("RustKeybindings", { clear = true })
 vim.api.nvim_create_autocmd("FileType", {
@@ -153,6 +164,13 @@ vim.api.nvim_create_autocmd("FileType", {
 	pattern = "python",
 	callback = set_python_keybindings,
 	group = "PythonKeybindings",
+})
+
+vim.api.nvim_create_augroup("CSharpKeybindings", { clear = true })
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "cs",
+	callback = set_csharp_keybindings,
+	group = "CSharpKeybindings",
 })
 
 -- Nvim Tree

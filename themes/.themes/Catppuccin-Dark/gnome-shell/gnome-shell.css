@@ -321,7 +321,6 @@
   background-color: #292c3c;
   border-radius: 21px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
-  border: 2px solid #e6e9ef;
 }
 
 .modal-dialog-linked-button:last-child {
@@ -1142,7 +1141,6 @@ StEntry StLabel.hint-text,
   border-radius: 20px;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.25);
   color: #eff1f5;
-  border: 2px solid #e6e9ef;
 }
 
 #LookingGlassDialog > #Toolbar {
@@ -1556,15 +1554,15 @@ StEntry StLabel.hint-text,
   color: rgba(239, 241, 245, 0.7);
   font-weight: bold;
   font-feature-settings: 'tnum';
-  font-size: 8;
+  font-size: 10pt;
   transition-duration: 250ms;
   box-shadow: none;
   border: none;
-  height: 35px;
-  background-color: rgba(30, 30, 46, 0.85);
-  margin: 5px 8px 1px;
-  border: 2px solid #cba6f7;
-  border-radius: 9999px;
+  height: 38px;
+  margin: 8px 12px 0px;
+  border-radius: 999px;
+  padding: 0px 6px;
+  background-color: rgba(30, 30, 46, 1);
 }
 
 #panel .panel-corner {
@@ -1585,8 +1583,7 @@ StEntry StLabel.hint-text,
   border-radius: 12px;
   text-shadow: none;
   box-shadow: none;
-  border: 4px solid transparent;
-  border-radius: 9999px;
+  border: 3px solid transparent;
 }
 
 #panel .panel-button.clock-display {
@@ -1596,16 +1593,12 @@ StEntry StLabel.hint-text,
 #panel .panel-button.clock-display .clock {
   transition-duration: 150ms;
   border-radius: 12px;
-  border: 4px solid transparent;
-  border-radius: 9999px;
 }
 
 #panel .panel-button:hover {
   color: #cba6f7;
   background-color: transparent;
   box-shadow: inset 0 0 0 1000px rgba(57, 57, 72, 0.624);
-  border: 4px solid transparent;
-  border-radius: 9999px;
 }
 
 #panel .panel-button:hover.clock-display {
@@ -1616,8 +1609,6 @@ StEntry StLabel.hint-text,
 #panel .panel-button:hover.clock-display .clock {
   color: #cba6f7;
   box-shadow: inset 0 0 0 1000px rgba(57, 57, 72, 0.624);
-  border: 4px solid transparent;
-  border-radius: 9999px;
 }
 
 #panel .panel-button:active, #panel .panel-button:active:hover, #panel .panel-button:overview, #panel .panel-button:overview:hover, #panel .panel-button:focus, #panel .panel-button:focus:hover, #panel .panel-button:checked, #panel .panel-button:checked:hover {
@@ -1775,7 +1766,6 @@ StEntry StLabel.hint-text,
   box-shadow: 0 6px 15px -6px rgba(0, 0, 0, 0.25);
   border: none;
   font-weight: normal;
-  border: 2px solid #cba6f7;
 }
 
 .popup-menu .popup-menu-item {
@@ -2836,7 +2826,7 @@ StWidget.focused .app-grid-running-dot {
 
 /* Dash */
 #dash {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 #dash .dash-background {
@@ -2844,7 +2834,7 @@ StWidget.focused .app-grid-running-dot {
   box-shadow: inset 0 0 0 1px rgba(239, 241, 245, 0.12);
   border: none;
   /* remove black border on ubuntu */
-  padding: 4px 3px;
+  padding: 12px 10px;
   border-radius: 23px;
 }
 
@@ -3224,7 +3214,6 @@ StWidget.focused .app-grid-running-dot {
   text-shadow: none;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
   border-radius: 18px;
-  border: 2px solid #cba6f7;
 }
 
 .notification-banner:hover, .notification-banner:active {
@@ -4149,7 +4138,6 @@ StWidget.focused .app-grid-running-dot {
 
 #dashtodockContainer #dash .dash-background {
   background-color: rgba(30, 30, 46, 0.85);
-  border: 2px solid #cba6f7;
 }
 
 #dashtodockContainer .app-well-app-running-dot {

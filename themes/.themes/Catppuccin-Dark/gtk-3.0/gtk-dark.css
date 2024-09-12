@@ -1390,6 +1390,7 @@ searchbar > revealer > box {
   color: #eff1f5;
   border-radius: 12px 12px 0 0;
   border: none;
+  box-shadow: inset 0 1px rgba(239, 241, 245, 0.1);
 }
 
 .titlebar:disabled {
@@ -1411,7 +1412,6 @@ searchbar > revealer > box {
 .titlebar .title {
   padding: 0 12px;
   font-weight: bold;
-  font-size: 0px;
 }
 
 .titlebar .subtitle {
@@ -2091,7 +2091,7 @@ popover.background {
 
 popover.background, .csd popover.background {
   box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2), 0 16px 15px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12), 0 0 0 2px #cba6f7, 0 0 36px transparent;
+  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2), 0 16px 15px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12), inset 0 1px rgba(239, 241, 245, 0.1), 0 0 36px transparent;
 }
 
 popover.background:backdrop, .csd popover.background:backdrop {
@@ -4138,13 +4138,13 @@ colorchooser .popover.osd:backdrop {
 decoration {
   transition: none;
   border-radius: 12px;
-  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2), 0 16px 15px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12), 0 0 0 2px #cba6f7, 0 0 36px transparent;
+  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2), 0 16px 15px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12), 0 0 36px transparent;
   margin: 10px;
 }
 
 decoration:backdrop {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 0 0 2px #292c3c, 0 0 36px transparent;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 0 36px transparent;
 }
 
 .tiled decoration, .tiled-top decoration, .tiled-right decoration, .tiled-bottom decoration, .tiled-left decoration {
@@ -4164,13 +4164,13 @@ decoration:backdrop {
 .ssd decoration {
   border: none;
   border-radius: 12px 12px 0 0;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 0 0 2px #cba6f7;
+  box-shadow: none;
 }
 
 .ssd decoration:backdrop {
   border: none;
   border-radius: 12px 12px 0 0;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 0 0 2px #292c3c;
+  box-shadow: none;
 }
 
 .metacity decoration {
@@ -4182,7 +4182,7 @@ decoration:backdrop {
 .csd.popup decoration {
   border-radius: 12px;
   border: none;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 0 0 2px #cba6f7;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
 }
 
 tooltip.csd decoration {
@@ -4819,7 +4819,7 @@ window.org-gnome-gedit > overlay > box.vertical > paned.gedit-side-panel-paned s
   padding: 6px;
   background-color: #292c3c;
   border-radius: 0 0 12px 12px;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.05), 0 4px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.05), 0 0 0 2px #e6e9ef;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.05), 0 4px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.05);
 }
 
 .gedit-search-slider .linked:not(.vertical) > entry .gedit-search-entry-occurrences-tag {
@@ -7288,9 +7288,8 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-popover {
-  border-color: #292c3c;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 0 0 2px #e6e9ef;
-  background-clip: border-box;
+  border: none;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
   background-color: #292c3c;
   border-radius: 12px;
 }
@@ -7400,7 +7399,7 @@ MsdOsdWindow.background.osd .progressbar {
   padding: 6px;
   margin: 6px;
   border: none;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 0 0 2px #e6e9ef;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
 }
 
 .budgie-popover.budgie-menu list.left-overlay-menu > row.activatable {
@@ -8175,7 +8174,7 @@ window#whiskermenu-window > frame > border {
   margin: 6px;
   border: none;
   background-color: #292c3c;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 0 0 2px #cba6f7;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(239, 241, 245, 0.1);
 }
 
 window#whiskermenu-window box.categories > button.radio {
@@ -8223,7 +8222,8 @@ window#whiskermenu-window .title-area > .commands-area > button.flat.command-but
 #XfceNotifyWindow {
   background-color: #313244;
   border-radius: 12px;
-  border: 2px solid #cba6f7;
+  border: none;
+  box-shadow: none;
 }
 
 #XfceNotifyWindow buttonbox {
@@ -8237,7 +8237,8 @@ window#whiskermenu-window .title-area > .commands-area > button.flat.command-but
 dialog.xfsm-logout-dialog {
   border-radius: 12px;
   background-color: rgba(41, 44, 60, 0.97);
-  border: 2px solid #cba6f7;
+  border: none;
+  box-shadow: none;
 }
 
 #xfwm-tabwin {

@@ -85,7 +85,7 @@ textview border {
 }
 
 iconview:hover, iconview:selected {
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 rubberband, .content-view rubberband, .content-view columnview.view > rubberband,
@@ -97,13 +97,13 @@ treeview.view > rubberband, gridview > rubberband, flowbox > rubberband {
 
 flowbox > flowboxchild {
   padding: 4px;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 flowbox > flowboxchild button.remove-button.osd {
-  min-height: 24px;
-  min-width: 24px;
-  padding: 6px;
+  min-height: 22px;
+  min-width: 22px;
+  padding: 4px;
 }
 
 .content-view .tile:selected {
@@ -144,7 +144,7 @@ headerbar label:disabled, tab label:disabled, button label:disabled {
 }
 
 label.osd {
-  border-radius: 12px;
+  border-radius: 10px;
   background-color: rgba(25, 25, 25, 0.9);
   color: white;
 }
@@ -174,7 +174,7 @@ window.assistant .sidebar {
 }
 
 window.assistant .sidebar label {
-  min-height: 36px;
+  min-height: 32px;
   padding: 0 12px;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 500;
@@ -191,13 +191,13 @@ popover.background.magnifier > contents, .osd {
   color: white;
   background-color: #2C2C2C;
   background-clip: padding-box;
-  border-radius: 12px;
+  border-radius: 10px;
   border: none;
 }
 
 .osd {
-  padding: 6px;
-  margin: 6px;
+  padding: 4px;
+  margin: 4px;
   box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 11px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -327,10 +327,10 @@ headerbar popover.background entry image:disabled, entry image:disabled {
 }
 
 entry {
-  min-height: 36px;
-  padding: 0 8px;
-  border-spacing: 6px;
-  border-radius: 12px;
+  min-height: 32px;
+  padding: 0 6px;
+  border-spacing: 4px;
+  border-radius: 10px;
 }
 
 entry.flat {
@@ -341,13 +341,13 @@ entry.flat {
 }
 
 entry image.left {
-  margin-left: 2px;
+  margin-left: 0px;
   margin-right: 6px;
 }
 
 entry image.right {
   margin-left: 6px;
-  margin-right: 2px;
+  margin-right: 0px;
 }
 
 entry undershoot.left > undershoot.left {
@@ -615,8 +615,8 @@ headerbar popover.background button:checked:disabled:not(.suggested-action):not(
 button {
   min-height: 24px;
   min-width: 16px;
-  padding: 6px 10px;
-  border-radius: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
   font-weight: 500;
 }
 
@@ -718,29 +718,29 @@ button.text-button.flat {
 
 button.image-button {
   min-width: 24px;
-  padding: 6px;
+  padding: 4px;
 }
 
 button.text-button.image-button {
   min-width: 24px;
-  padding: 6px;
-  border-radius: 12px;
+  padding: 4px;
+  border-radius: 10px;
 }
 
 button.text-button.image-button label:first-child {
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 button.text-button.image-button label:last-child {
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 button.text-button.image-button.flat label:first-child {
-  margin-left: 6px;
+  margin-left: 8px;
 }
 
 button.text-button.image-button.flat label:last-child {
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 button.text-button.image-button image:not(:only-child) {
@@ -748,7 +748,7 @@ button.text-button.image-button image:not(:only-child) {
 }
 
 .linked:not(.vertical) > button.flat:not(:only-child), .linked.vertical > button.flat:not(:only-child) {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .linked:not(.vertical) > button.flat:focus, .linked.vertical > button.flat:focus {
@@ -756,17 +756,17 @@ button.text-button.image-button image:not(:only-child) {
 }
 
 .linked:not(.vertical) > menubutton:first-child > button {
-  border-radius: 12px 0 0 12px;
+  border-radius: 10px 0 0 10px;
 }
 
 .linked:not(.vertical) > menubutton:last-child > button {
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 10px 10px 0;
 }
 
 button.osd {
   min-height: 24px;
   min-width: 24px;
-  padding: 6px;
+  padding: 4px;
   box-shadow: none;
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
@@ -896,7 +896,7 @@ stackswitcher > button.needs-attention:checked > image {
 }
 
 button.font > box, button.file > box {
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 button.font > box > box > label, button.file > box > box > label {
@@ -914,8 +914,8 @@ radio label, headerbar windowcontrols button:not(.suggested-action):not(.destruc
 }
 
 .nautilus-window .floating-bar button, placessidebar .navigation-sidebar > row button.sidebar-button, notebook > header tab button.flat, popover.menu box.circular-buttons button.circular.image-button.model, spinbutton:not(.vertical) > button, spinbutton.vertical > button {
-  min-height: 24px;
-  min-width: 24px;
+  min-height: 22px;
+  min-width: 22px;
   padding: 0;
   border-radius: 9999px;
 }
@@ -938,17 +938,17 @@ stackswitcher > button.needs-attention > image:dir(rtl) {
 }
 
 .linked:not(.vertical) > entry:first-child, .linked:not(.vertical) > button:first-child {
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .linked:not(.vertical) > entry:last-child, .linked:not(.vertical) > button:last-child {
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .linked:not(.vertical) > entry:only-child, .linked:not(.vertical) > button:only-child {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .linked.vertical > entry, .linked.vertical > button, .linked.vertical > button.image-button {
@@ -956,23 +956,23 @@ stackswitcher > button.needs-attention > image:dir(rtl) {
 }
 
 .linked.vertical > entry:first-child, .linked.vertical > button:first-child {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .linked.vertical > entry:last-child, .linked.vertical > button:last-child {
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .linked.vertical > entry:only-child, .linked.vertical > button:only-child {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 button.color {
-  min-height: 24px;
-  min-width: 24px;
-  padding: 6px;
+  min-height: 22px;
+  min-width: 22px;
+  padding: 4px;
 }
 
 
@@ -1041,7 +1041,7 @@ spinbutton:not(.vertical), spinbutton.vertical {
   outline-offset: 4px;
   background-color: rgba(255, 255, 255, 0.04);
   color: white;
-  border-radius: 12px;
+  border-radius: 10px;
   padding: 0;
   border-spacing: 0;
 }
@@ -1077,7 +1077,7 @@ spinbutton:not(.vertical) > text, spinbutton.vertical > text {
 
 spinbutton:not(.vertical) > button, spinbutton.vertical > button {
   padding: 0;
-  border: 6px solid transparent;
+  border: 4px solid transparent;
 }
 
 spinbutton:not(.vertical) > button:focus:not(:hover):not(:active):not(:disabled), spinbutton.vertical > button:focus:not(:hover):not(:active):not(:disabled) {
@@ -1086,16 +1086,16 @@ spinbutton:not(.vertical) > button:focus:not(:hover):not(:active):not(:disabled)
 }
 
 spinbutton:not(.vertical) > text {
-  min-width: 32px;
-  padding-left: 12px;
+  min-width: 24px;
+  padding-left: 8px;
 }
 
 spinbutton:not(.vertical) > button.up:dir(ltr), spinbutton:not(.vertical) > button.down:dir(rtl) {
-  margin-left: -3px;
+  margin-left: -2px;
 }
 
 spinbutton:not(.vertical) > button.up:dir(rtl), spinbutton:not(.vertical) > button.down:dir(ltr) {
-  margin-right: -3px;
+  margin-right: -2px;
 }
 
 spinbutton.vertical:disabled {
@@ -1103,36 +1103,36 @@ spinbutton.vertical:disabled {
 }
 
 spinbutton.vertical > text {
-  min-height: 36px;
-  min-width: 42px;
+  min-height: 32px;
+  min-width: 36px;
   padding: 0;
 }
 
 spinbutton.vertical > button.up {
-  margin: 0 3px;
+  margin: 0 2px;
 }
 
 spinbutton.vertical > button.down {
-  margin: 0 3px;
+  margin: 0 2px;
 }
 
 list > row spinbutton:not(.vertical) > button {
-  margin: 6px;
+  margin: 4px;
 }
 
 list > row spinbutton:not(.vertical) > button.up:dir(ltr), list > row spinbutton:not(.vertical) > button.down:dir(rtl) {
-  margin-left: 3px;
+  margin-left: 2px;
 }
 
 list > row spinbutton:not(.vertical) > button.up:dir(rtl), list > row spinbutton:not(.vertical) > button.down:dir(ltr) {
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 /**************
  * ComboBoxes *
  **************/
 dropdown > button > box {
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 dropdown arrow,
@@ -1144,18 +1144,18 @@ combobox arrow {
 
 dropdown > popover.menu,
 combobox > popover.menu {
-  margin-top: 6px;
+  margin-top: 4px;
   padding: 0;
 }
 
 dropdown button.combo cellview:dir(ltr),
 combobox button.combo cellview:dir(ltr) {
-  margin-left: -2px;
+  margin-left: 0px;
 }
 
 dropdown button.combo cellview:dir(rtl),
 combobox button.combo cellview:dir(rtl) {
-  margin-right: -2px;
+  margin-right: 0px;
 }
 
 dropdown.linked button:nth-child(2):dir(ltr),
@@ -1172,28 +1172,28 @@ combobox.linked button:nth-child(2):dir(rtl) {
 
 dropdown > .linked:not(.vertical) > entry:not(:only-child),
 combobox > .linked:not(.vertical) > entry:not(:only-child) {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 dropdown > .linked:not(.vertical) > entry:not(:only-child):first-child,
 combobox > .linked:not(.vertical) > entry:not(:only-child):first-child {
-  margin-right: -36px;
-  padding-right: 36px;
+  margin-right: -32px;
+  padding-right: 32px;
 }
 
 dropdown > .linked:not(.vertical) > entry:not(:only-child):last-child,
 combobox > .linked:not(.vertical) > entry:not(:only-child):last-child {
-  margin-left: -36px;
-  padding-left: 36px;
+  margin-left: -32px;
+  padding-left: 32px;
 }
 
 dropdown > .linked:not(.vertical) > button:not(:only-child),
 combobox > .linked:not(.vertical) > button:not(:only-child) {
   min-height: 16px;
   min-width: 16px;
-  margin: 6px;
-  padding: 4px;
-  border-radius: 12px;
+  margin: 5px;
+  padding: 3px;
+  border-radius: 10px;
 }
 
 .linked:not(.vertical) > combobox:not(:first-child) > box > button.combo {
@@ -1217,7 +1217,7 @@ combobox > .linked:not(.vertical) > button:not(:only-child) {
 }
 
 button.combo:only-child {
-  border-radius: 12px;
+  border-radius: 10px;
   font-weight: normal;
   transition: outline-color 300ms cubic-bezier(0, 0, 0.2, 1), outline-width 300ms cubic-bezier(0, 0, 0.2, 1), outline-offset 300ms cubic-bezier(0, 0, 0.2, 1);
   outline: 0 solid transparent;
@@ -1261,8 +1261,8 @@ button.combo:only-child:disabled {
 .app-notification, .toolbar.osd,
 toolbar.osd {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
-  padding: 6px;
-  border-radius: 12px;
+  padding: 4px;
+  border-radius: 10px;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: #3C3C3C;
   color: white;
@@ -1279,9 +1279,9 @@ toolbar.osd:backdrop {
  ************/
 .toolbar,
 toolbar {
-  padding: 3px 6px;
+  padding: 2px 4px;
   background-color: #212121;
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 .osd .toolbar, .osd toolbar {
@@ -1351,17 +1351,17 @@ toolbar:not(.inline-toolbar):not(.osd) spinbutton button {
 
 .toolbar:not(.inline-toolbar):not(.osd) switch,
 toolbar:not(.inline-toolbar):not(.osd) switch {
-  margin: 8px 2px;
+  margin: 6px 2px;
 }
 
 .toolbar button {
   margin: 1px;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 searchbar > revealer > box {
-  padding: 6px;
-  border-spacing: 6px;
+  padding: 4px;
+  border-spacing: 4px;
   border-style: solid;
   border-width: 0 0 1px;
   border-color: rgba(255, 255, 255, 0.12);
@@ -1490,11 +1490,11 @@ headerbar {
   transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1), color 75ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
   color: white;
-  min-height: 48px;
+  min-height: 40px;
   padding: 0;
   margin: 0;
   background-color: #2C2C2C;
-  border-radius: 18px 18px 0 0;
+  border-radius: 16px 16px 0 0;
 }
 
 headerbar:disabled {
@@ -1516,12 +1516,12 @@ headerbar.flat {
 }
 
 headerbar .title {
-  padding: 0 12px;
+  padding: 0 8px;
   font-weight: bold;
 }
 
 headerbar .subtitle {
-  padding: 0 12px;
+  padding: 0 8px;
   font-size: smaller;
 }
 
@@ -1554,7 +1554,7 @@ headerbar splitbutton {
 headerbar splitbutton > button, headerbar splitbutton > menubutton > button {
   min-height: 24px;
   min-width: 24px;
-  padding: 6px;
+  padding: 4px;
   border-radius: 9999px;
 }
 
@@ -1571,7 +1571,7 @@ headerbar splitbutton > menubutton > button:dir(ltr) {
 }
 
 headerbar .linked:not(.vertical) > entry:not(:only-child) {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 headerbar button.suggested-action:disabled,
@@ -1588,7 +1588,7 @@ headerbar.flat {
   background-color: #212121;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.7);
-  border-radius: 18px 18px 0 0;
+  border-radius: 16px 16px 0 0;
 }
 
 background.csd.info headerbar.flat, background.csd.about headerbar.flat {
@@ -1629,7 +1629,7 @@ headerbar popover.background .linked:not(.vertical) > button:not(.suggested-acti
 }
 
 headerbar stackswitcher {
-  margin: 6px 0;
+  margin: 4px 0;
   border-radius: 9999px;
 }
 
@@ -1675,25 +1675,25 @@ headerbar stackswitcher.linked:not(.vertical) > button:not(.suggested-action):no
 }
 
 headerbar > windowhandle > box {
-  padding: 0 6px;
+  padding: 0 4px;
 }
 
 headerbar > windowhandle > box,
 headerbar > windowhandle > box > box.start,
 headerbar > windowhandle > box > box.end {
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 headerbar > windowhandle > box > box.start:dir(ltr),
 headerbar > windowhandle > box > box.end:dir(rtl), headerbar > windowhandle > box > widget > box.start:dir(ltr),
 headerbar > windowhandle > box > widget > box.end:dir(rtl) {
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
 headerbar > windowhandle > box > box.start:dir(rtl),
 headerbar > windowhandle > box > box.end:dir(ltr), headerbar > windowhandle > box > widget > box.start:dir(rtl),
 headerbar > windowhandle > box > widget > box.end:dir(ltr) {
-  margin-left: 6px;
+  margin-left: 4px;
 }
 
 headerbar entry,
@@ -1702,8 +1702,8 @@ headerbar button,
 headerbar stackswitcher,
 headerbar menubutton,
 headerbar splitbutton {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 headerbar menubutton > button,
@@ -1717,8 +1717,8 @@ headerbar entry > menubutton {
 }
 
 headerbar switch {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 headerbar.selection-mode {
@@ -1757,11 +1757,11 @@ headerbar .selection-mode {
 }
 
 headerbar.default-decoration {
-  min-height: 24px;
+  min-height: 22px;
   padding: 0;
   background-image: none;
   background-color: #2C2C2C;
-  border-radius: 18px 18px 0 0;
+  border-radius: 16px 16px 0 0;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
 }
 
@@ -1773,9 +1773,9 @@ headerbar.default-decoration {
 headerbar.default-decoration windowcontrols button,
 headerbar.default-decoration windowcontrols menubutton {
   padding: 0;
-  min-height: 24px;
-  min-width: 24px;
-  margin: 6px 0;
+  min-height: 22px;
+  min-width: 22px;
+  margin: 4px 0;
 }
 
 .solid-csd headerbar:dir(rtl), .solid-csd headerbar:dir(ltr) {
@@ -1793,15 +1793,15 @@ window.devel headerbar.titlebar:backdrop {
 }
 
 headerbar windowcontrols {
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 headerbar windowcontrols.start:dir(ltr), headerbar windowcontrols.end:dir(rtl) {
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
 headerbar windowcontrols.start:dir(rtl), headerbar windowcontrols.end:dir(ltr) {
-  margin-left: 6px;
+  margin-left: 4px;
 }
 
 headerbar windowcontrols button:not(.suggested-action):not(.destructive-action) > image {
@@ -1818,17 +1818,17 @@ headerbar windowcontrols button:not(.suggested-action):not(.destructive-action) 
  ************/
 
 pathbar > button {
-  padding-left: 6px;
-  padding-right: 6px;
-  border-radius: 12px;
-  border-spacing: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 10px;
+  border-spacing: 2px;
 }
 
 
 pathbar > button label,
 pathbar > button image {
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 
@@ -1856,13 +1856,13 @@ pathbar > button.slider-button {
   background-color: rgba(255, 255, 255, 0.04);
   color: rgba(255, 255, 255, 0.7);
   border: none;
-  border-radius: 12px;
+  border-radius: 10px;
   padding: 2px;
 }
 
 headerbar .pathbar {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   background-color: rgba(255, 255, 255, 0.04);
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1871,7 +1871,7 @@ headerbar .pathbar {
   margin-top: 0;
   margin-bottom: 0;
   min-height: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   border: none;
   box-shadow: none;
 }
@@ -2108,7 +2108,7 @@ menubar > item label:disabled {
 }
 
 menubar > item popover.menu popover.menu {
-  margin-left: 9px;
+  margin-left: 6px;
 }
 
 menubar > item popover.menu.background popover.menu.background > contents {
@@ -2119,12 +2119,12 @@ menubar > item popover.menu.background popover.menu.background > contents {
  * Popover Base Menus *
  **********************/
 popover.menu box.inline-buttons {
-  padding: 0 14px;
+  padding: 0 12px;
 }
 
 popover.menu box.inline-buttons button.image-button.model {
-  min-height: 28px;
-  min-width: 28px;
+  min-height: 24px;
+  min-width: 24px;
   padding: 0;
   border: none;
   outline: none;
@@ -2136,11 +2136,11 @@ popover.menu box.inline-buttons button.image-button.model:selected {
 }
 
 popover.menu box.circular-buttons {
-  padding: 6px;
+  padding: 4px;
 }
 
 popover.menu box.circular-buttons button.circular.image-button.model {
-  padding: 6px;
+  padding: 4px;
 }
 
 popover.menu box.circular-buttons button.circular.image-button.model:focus {
@@ -2163,7 +2163,7 @@ popover.menu check.right {
 
 popover.menu label.title {
   font-weight: bold;
-  padding: 3px 32px;
+  padding: 2px 26px;
 }
 
 /************
@@ -2181,11 +2181,11 @@ popover.background, popover.background:backdrop {
 popover.background > arrow,
 popover.background > contents {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
-  padding: 6px;
+  padding: 4px;
   box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 11px 0 rgba(0, 0, 0, 0.12);
   background-color: #3C3C3C;
   border: none;
-  border-radius: 11px;
+  border-radius: 9px;
   color: white;
 }
 
@@ -2208,7 +2208,7 @@ popover.background > contents > scrolledwindow > viewport > stack > box {
 
 popover.background > contents separator {
   background-color: rgba(255, 255, 255, 0.12);
-  margin: 3px 0;
+  margin: 2px 0;
 }
 
 popover.background > contents list {
@@ -2217,7 +2217,7 @@ popover.background > contents list {
 }
 
 popover.background > contents list > row {
-  padding: 6px 12px;
+  padding: 4px 8px;
   margin: 0;
 }
 
@@ -2244,19 +2244,19 @@ popover.background .linked > button:not(.radio):only-child {
 
 popover.background modelbutton {
   transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1);
-  min-height: 22px;
-  min-width: 56px;
-  padding: 3px 9px;
+  min-height: 20px;
+  min-width: 48px;
+  padding: 2px 6px;
   border-radius: 5px;
   color: white;
   font: initial;
   text-shadow: none;
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 popover.background modelbutton accelerator {
   color: rgba(255, 255, 255, 0.5);
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 popover.background modelbutton accelerator:disabled {
@@ -2287,7 +2287,7 @@ popover.background listview {
 }
 
 popover.background listview > row {
-  padding: 6px 12px;
+  padding: 4px 8px;
   border-radius: 5px;
   margin: 0;
 }
@@ -2301,9 +2301,9 @@ magnifier {
  *************/
 notebook > header tab {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
-  min-height: 24px;
-  min-width: 24px;
-  padding: 6px 12px;
+  min-height: 22px;
+  min-width: 22px;
+  padding: 4px 8px;
   border-width: 1px;
   border-color: transparent;
   border-style: solid;
@@ -2349,16 +2349,16 @@ frame > paned > notebook > header, notebook.frame > header {
 }
 
 notebook.frame {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 notebook.frame frame > border {
   border: none;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 notebook.frame frame > list row.activatable {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 notebook:focus tab:checked {
@@ -2366,19 +2366,19 @@ notebook:focus tab:checked {
 }
 
 notebook.frame > header.top {
-  border-radius: 12px 12px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 notebook.frame > header.bottom {
-  border-radius: 0 0 12px 12px;
+  border-radius: 0 0 10px 10px;
 }
 
 notebook.frame > header.left {
-  border-radius: 12px 0 0 12px;
+  border-radius: 10px 0 0 10px;
 }
 
 notebook.frame > header.right {
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 10px 10px 0;
 }
 
 notebook > header {
@@ -2396,7 +2396,7 @@ notebook > header.top > tabs {
 }
 
 notebook > header.top > tabs > tab {
-  border-radius: 12px 12px 0 0;
+  border-radius: 10px 10px 0 0;
   border-bottom: none;
 }
 
@@ -2409,7 +2409,7 @@ notebook > header.bottom > tabs {
 }
 
 notebook > header.bottom > tabs > tab {
-  border-radius: 0 0 12px 12px;
+  border-radius: 0 0 10px 10px;
   border-top: none;
 }
 
@@ -2422,7 +2422,7 @@ notebook > header.left > tabs {
 }
 
 notebook > header.left > tabs > tab {
-  border-radius: 12px 0 0 12px;
+  border-radius: 10px 0 0 10px;
   border-right: none;
 }
 
@@ -2435,7 +2435,7 @@ notebook > header.right > tabs {
 }
 
 notebook > header.right > tabs > tab {
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 10px 10px 0;
   border-left: none;
 }
 
@@ -2493,8 +2493,8 @@ notebook > header > tabs > arrow {
 
 notebook > header tab > box {
   transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1);
-  margin: -6px -12px;
-  padding: 6px 12px;
+  margin: -4px -12px;
+  padding: 4px 12px;
 }
 
 notebook > header tab > box:drop(active) {
@@ -2503,13 +2503,13 @@ notebook > header tab > box:drop(active) {
 }
 
 notebook > header tab button.flat:last-child {
-  margin-left: 6px;
-  margin-right: -6px;
+  margin-left: 4px;
+  margin-right: -8px;
 }
 
 notebook > header tab button.flat:first-child {
-  margin-left: -6px;
-  margin-right: 6px;
+  margin-left: -8px;
+  margin-right: 4px;
 }
 
 notebook > header.top tabs, notebook > header.bottom tabs {
@@ -2548,7 +2548,7 @@ notebook > header.left tabs tab.reorderable-page, notebook > header.right tabs t
 
 notebook > stack:not(:only-child) {
   background-color: transparent;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 /**************
@@ -2714,7 +2714,7 @@ scrollbar.horizontal button.up {
  **********/
 switch {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
-  margin: 6px 0;
+  margin: 4px 0;
   padding: 0 2px;
   border: 5px solid transparent;
   border-radius: 9999px;
@@ -2813,19 +2813,19 @@ radiobutton.text-button label:not(:only-child) {
 }
 
 popover checkbutton.text-button > check:dir(ltr), popover radiobutton.text-button > check:dir(ltr) {
-  margin-left: -16px;
+  margin-left: -12px;
 }
 
 popover checkbutton.text-button > check:dir(rtl), popover radiobutton.text-button > check:dir(rtl) {
-  margin-right: -16px;
+  margin-right: -12px;
 }
 
 check,
 radio {
-  min-height: 24px;
-  min-width: 24px;
-  margin: -8px;
-  padding: 8px;
+  min-height: 20px;
+  min-width: 20px;
+  margin: -6px;
+  padding: 6px;
   border: none;
 }
 
@@ -3011,23 +3011,23 @@ scale {
 }
 
 scale.horizontal {
-  padding: 17px 12px;
+  padding: 15px 12px;
 }
 
 scale.vertical {
-  padding: 12px 17px;
+  padding: 12px 15px;
 }
 
 scale.fine-tune.horizontal {
   min-height: 4px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 scale.fine-tune.vertical {
   min-width: 4px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 scale.fine-tune > trough > slider {
@@ -3280,12 +3280,12 @@ progressbar.vertical progress {
 }
 
 progressbar trough {
-  border-radius: 12px;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.15);
 }
 
 progressbar progress {
-  border-radius: 12px;
+  border-radius: 10px;
   background-color: #3281EA;
 }
 
@@ -3318,7 +3318,7 @@ levelbar.horizontal block {
 }
 
 levelbar.horizontal.discrete block {
-  min-width: 36px;
+  min-width: 32px;
 }
 
 levelbar.horizontal.discrete block:not(:last-child) {
@@ -3330,7 +3330,7 @@ levelbar.vertical block {
 }
 
 levelbar.vertical.discrete block {
-  min-height: 36px;
+  min-height: 32px;
 }
 
 levelbar.vertical.discrete block:not(:last-child) {
@@ -3338,7 +3338,7 @@ levelbar.vertical.discrete block:not(:last-child) {
 }
 
 levelbar trough {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 levelbar block.low {
@@ -3393,7 +3393,7 @@ frame > list,
 
 frame.view,
 .frame.view {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 frame.flat,
@@ -3402,7 +3402,7 @@ frame.flat,
 }
 
 frame {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 frame > label {
@@ -3414,8 +3414,8 @@ frame.flat > border, statusbar frame > border {
 }
 
 actionbar > revealer > box {
-  padding: 6px;
-  border-spacing: 6px;
+  padding: 4px;
+  border-spacing: 4px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   background-color: #2C2C2C;
   background-clip: border-box;
@@ -3430,7 +3430,7 @@ actionbar > revealer > box splitbutton {
 }
 
 statusbar {
-  padding: 6px 18px;
+  padding: 4px 12px;
 }
 
 scrolledwindow viewport.frame {
@@ -3531,11 +3531,11 @@ separator.spacer {
 }
 
 separator.spacer.horizontal {
-  min-width: 12px;
+  min-width: 8px;
 }
 
 separator.spacer.vertical {
-  min-height: 12px;
+  min-height: 8px;
 }
 
 stacksidebar + separator.vertical,
@@ -3584,7 +3584,7 @@ list.separators:not(.horizontal) > row:not(.separator) {
 }
 
 list.frame {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 row {
@@ -3717,13 +3717,13 @@ columnview row:not(:selected) cell editablelabel.editing text selection {
 }
 
 .rich-list > row {
-  padding: 9px 12px;
+  padding: 6px 8px;
   min-height: 32px;
   /* should be tall even when only containing a label */
 }
 
 .rich-list > row > box {
-  border-spacing: 12px;
+  border-spacing: 8px;
 }
 
 /****************
@@ -3734,9 +3734,9 @@ row label.subtitle {
 }
 
 row > box.header {
-  margin-left: 12px;
-  margin-right: 12px;
-  min-height: 48px;
+  margin-left: 8px;
+  margin-right: 8px;
+  min-height: 40px;
 }
 
 row > box.header > .icon:disabled {
@@ -3744,9 +3744,9 @@ row > box.header > .icon:disabled {
 }
 
 row > box.header > box.title {
-  margin-top: 6px;
-  margin-bottom: 6px;
-  border-spacing: 3px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-spacing: 2px;
 }
 
 /***************
@@ -3852,8 +3852,8 @@ list.boxed-list > row.expander {
 list.content > row:first-child, list.content > row:first-child.expander row.header,
 list.boxed-list > row:first-child,
 list.boxed-list > row:first-child.expander row.header {
-  border-top-left-radius: 11px;
-  border-top-right-radius: 11px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
 
 list.content > row:last-child, list.content > row:last-child.expander:not(:checked), list.content > row:last-child.expander:not(:checked) row.header, list.content > row:last-child.expander:checked list.nested, list.content > row:last-child.expander:checked list.nested > row:last-child, list.content > row:only-child, list.content > row:only-child.expander:not(:checked), list.content > row:only-child.expander:not(:checked) row.header, list.content > row:only-child.expander:checked list.nested, list.content > row:only-child.expander:checked list.nested > row:last-child,
@@ -3867,8 +3867,8 @@ list.boxed-list > row:only-child.expander:not(:checked),
 list.boxed-list > row:only-child.expander:not(:checked) row.header,
 list.boxed-list > row:only-child.expander:checked list.nested,
 list.boxed-list > row:only-child.expander:checked list.nested > row:last-child {
-  border-bottom-left-radius: 11px;
-  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
   border-bottom-width: 0;
 }
 
@@ -3876,9 +3876,9 @@ list.boxed-list > row:only-child.expander:checked list.nested > row:last-child {
  * App Notifications *
  *********************/
 .app-notification {
-  margin: 9px;
-  border-spacing: 9px;
-  padding: 9px;
+  margin: 6px;
+  border-spacing: 6px;
+  padding: 6px;
   border: none;
   background-image: none;
 }
@@ -3920,7 +3920,7 @@ expander:disabled {
 }
 
 expander-widget > box > title {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 expander-widget > box > title:hover > expander {
@@ -3943,7 +3943,7 @@ expander-widget:not(decoration):not(window):drop(active) {
 calendar {
   padding: 0;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 12px;
+  border-radius: 10px;
   color: white;
 }
 
@@ -3952,20 +3952,20 @@ calendar:disabled {
 }
 
 calendar:selected {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 calendar > header {
-  padding: 3px;
+  padding: 2px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 calendar > header > button {
-  min-height: 24px;
+  min-height: 22px;
 }
 
 calendar > grid {
-  margin: 3px;
+  margin: 2px;
 }
 
 calendar > grid > label {
@@ -3982,7 +3982,7 @@ calendar > grid > label:focus {
 }
 
 calendar > grid > label.day-number {
-  padding: 9px;
+  padding: 6px;
 }
 
 calendar > grid > label.day-number.other-month {
@@ -4002,7 +4002,7 @@ window.dialog.message box.dialog-vbox.vertical {
 }
 
 window.dialog.message .titlebar {
-  min-height: 24px;
+  min-height: 22px;
   border-style: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: #3C3C3C;
@@ -4015,7 +4015,7 @@ window.dialog.message .titlebar:backdrop {
 }
 
 window.dialog.message.csd .dialog-action-area {
-  padding: 6px;
+  padding: 4px;
   border: none;
   box-shadow: none;
 }
@@ -4030,7 +4030,7 @@ window.dialog.message.csd .dialog-action-area > button, window.dialog.message.cs
 }
 
 window.dialog.message.csd .dialog-action-area > button:not(:last-child) {
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
 window.dialog.message.csd .dialog-action-area > button:not(:disabled) {
@@ -4047,7 +4047,7 @@ window.messagedialog .message-area separator {
 }
 
 window.messagedialog .response-area {
-  padding: 6px;
+  padding: 4px;
   box-shadow: none;
   border: none;
 }
@@ -4059,7 +4059,7 @@ window.messagedialog .response-area button {
 }
 
 window.messagedialog .response-area button:not(:last-child) {
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
 window.messagedialog .response-area button.suggested:not(:disabled) {
@@ -4099,7 +4099,7 @@ filechooser placesview > stack > scrolledwindow > undershoot.bottom {
 }
 
 filechooserbutton > button > box {
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 filechooserbutton:drop(active) {
@@ -4147,14 +4147,14 @@ paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .
 }
 
 stacksidebar list {
-  padding: 6px;
+  padding: 4px;
   background-color: #242424;
 }
 
 stacksidebar row {
-  min-height: 24px;
-  padding: 6px 9px;
-  border-radius: 6px;
+  min-height: 22px;
+  padding: 4px 6px;
+  border-radius: 5px;
 }
 
 stacksidebar row:selected {
@@ -4166,8 +4166,8 @@ stacksidebar row + row {
 }
 
 stacksidebar row > label {
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
   color: inherit;
 }
 
@@ -4188,7 +4188,7 @@ separator.sidebar.spacer {
  * Navigation Sidebar *
  **********************/
 .navigation-sidebar {
-  padding: 6px 0;
+  padding: 4px 0;
   border-right: none;
 }
 
@@ -4203,10 +4203,10 @@ separator.sidebar.spacer {
 }
 
 .navigation-sidebar > row {
-  min-height: 24px;
-  padding: 6px 9px;
+  min-height: 22px;
+  padding: 4px 6px;
   border-radius: 0 9999px 9999px 0;
-  margin: 0 6px 0 0;
+  margin: 0 4px 0 0;
 }
 
 .navigation-sidebar > row:hover, .navigation-sidebar > row:focus-visible:focus-within {
@@ -4240,7 +4240,7 @@ separator.sidebar.spacer {
 }
 
 .navigation-sidebar > separator {
-  margin: 6px 0;
+  margin: 4px 0;
 }
 
 /****************
@@ -4260,13 +4260,13 @@ placessidebar > viewport.frame {
 }
 
 placessidebar .navigation-sidebar {
-  padding: 6px 0;
+  padding: 4px 0;
 }
 
 placessidebar .navigation-sidebar > row {
   min-height: 32px;
   margin: 0 4px 0 0;
-  padding: 3px;
+  padding: 2px;
   border-radius: 0 9999px 9999px 0;
 }
 
@@ -4336,7 +4336,7 @@ placesview .server-list-button:checked > image {
 }
 
 placesview > actionbar > revealer > box > label {
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 /*********
@@ -4404,7 +4404,7 @@ paned.vertical > separator.wide {
  ************/
 video {
   background: black;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 video image.osd {
@@ -4423,8 +4423,8 @@ infobar {
 }
 
 infobar > revealer > box {
-  padding: 6px;
-  border-spacing: 12px;
+  padding: 4px;
+  border-spacing: 8px;
 }
 
 infobar.info > revealer > box, infobar.info:hover > revealer > box, infobar.info:backdrop > revealer > box {
@@ -4491,7 +4491,7 @@ infobar.error:hover > revealer > box {
  * Tooltips *
  ************/
 tooltip {
-  padding: 6px 12px;
+  padding: 4px 8px;
   box-shadow: none;
 }
 
@@ -4499,56 +4499,56 @@ tooltip.background, tooltip.background.csd {
   background-color: rgba(25, 25, 25, 0.9);
   color: white;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-  border-radius: 6px;
+  border-radius: 5px;
   margin: 2px 6px 8px 6px;
   border: none;
 }
 
 tooltip > box {
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 /*****************
  * Color Chooser *
  *****************/
 colorswatch.top {
-  border-top-left-radius: 11px;
-  border-top-right-radius: 11px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
 
 colorswatch.top overlay {
-  border-top-left-radius: 11px;
-  border-top-right-radius: 11px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
 
 colorswatch.bottom {
-  border-bottom-left-radius: 11px;
-  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
 }
 
 colorswatch.bottom overlay {
-  border-bottom-left-radius: 11px;
-  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
 }
 
 colorswatch.left, colorswatch:first-child:not(.top) {
-  border-top-left-radius: 11px;
-  border-bottom-left-radius: 11px;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
 }
 
 colorswatch.left overlay, colorswatch:first-child:not(.top) overlay {
-  border-top-left-radius: 11px;
-  border-bottom-left-radius: 11px;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
 }
 
 colorswatch.right, colorswatch:last-child:not(.bottom) {
-  border-top-right-radius: 11px;
-  border-bottom-right-radius: 11px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
 }
 
 colorswatch.right overlay, colorswatch:last-child:not(.bottom) overlay {
-  border-top-right-radius: 11px;
-  border-bottom-right-radius: 11px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
 }
 
 colorswatch.dark {
@@ -4560,12 +4560,12 @@ colorswatch.light {
 }
 
 colorswatch#add-color-button {
-  border-radius: 11px 11px 0 0;
+  border-radius: 9px 9px 0 0;
   color: white;
 }
 
 colorswatch#add-color-button:only-child {
-  border-radius: 11px;
+  border-radius: 9px;
 }
 
 colorswatch#add-color-button overlay {
@@ -4581,16 +4581,16 @@ colorswatch:disabled overlay {
 }
 
 colorswatch#editor-color-sample {
-  border-radius: 11px;
+  border-radius: 9px;
 }
 
 colorswatch#editor-color-sample overlay {
-  border-radius: 11px;
+  border-radius: 9px;
 }
 
 colorchooser .popover.osd {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
   background-color: #3C3C3C;
 }
@@ -4618,7 +4618,7 @@ window.csd {
   padding: 0;
   margin: 0;
   transition: none;
-  border-radius: 18px;
+  border-radius: 16px;
   box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2), 0 16px 16px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12), 0 16px 16px 2px transparent, 0 6px 18px 5px transparent, inset 0 1px rgba(255, 255, 255, 0.1);
 }
 
@@ -4759,13 +4759,13 @@ stackswitcher button.text-button {
 }
 
 stackswitcher.circular {
-  border-spacing: 12px;
+  border-spacing: 8px;
 }
 
 stackswitcher.circular button.circular,
 stackswitcher.circular button.text-button.circular {
-  min-width: 36px;
-  min-height: 36px;
+  min-width: 32px;
+  min-height: 32px;
   padding: 0;
 }
 
@@ -4792,8 +4792,8 @@ popover.emoji-picker > contents {
 }
 
 .emoji-searchbar {
-  padding: 6px;
-  border-spacing: 6px;
+  padding: 4px;
+  border-spacing: 4px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   background: none;
 }
@@ -4809,7 +4809,7 @@ popover.emoji-picker > contents {
 
 .emoji-toolbar {
   padding: 0;
-  border-spacing: 3px;
+  border-spacing: 2px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   background: none;
   box-shadow: none;
@@ -4817,8 +4817,8 @@ popover.emoji-picker > contents {
 
 button.emoji-section {
   margin: 0;
-  padding: 6px;
-  border-radius: 9px;
+  padding: 4px;
+  border-radius: 8px;
 }
 
 button.emoji-section:checked {
@@ -4827,9 +4827,9 @@ button.emoji-section:checked {
 
 popover.emoji-picker emoji {
   font-size: x-large;
-  padding: 6px;
+  padding: 4px;
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 popover.emoji-picker emoji:focus, popover.emoji-picker emoji:hover {
@@ -4837,13 +4837,13 @@ popover.emoji-picker emoji:focus, popover.emoji-picker emoji:hover {
 }
 
 emoji-completion-row {
-  min-height: 28px;
-  padding: 0 12px;
+  min-height: 24px;
+  padding: 0 8px;
 }
 
 emoji-completion-row > box {
-  border-spacing: 6px;
-  padding: 2px 6px;
+  border-spacing: 4px;
+  padding: 2px 4px;
 }
 
 emoji-completion-row:focus, emoji-completion-row:hover,
@@ -4877,12 +4877,12 @@ popover.entry-completion > contents {
 
 .nautilus-window flap.unfolded > placessidebar {
   background-color: transparent;
-  border-radius: 18px;
+  border-radius: 16px;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .nautilus-window flap.unfolded > placessidebar > scrolledwindow {
-  margin: 0 0 12px 12px;
+  margin: 0 0 8px 8px;
   border-radius: 12px;
   background-color: rgba(50, 129, 234, 0.08);
 }
@@ -4918,7 +4918,7 @@ popover.entry-completion > contents {
 }
 
 .nautilus-window flap.unfolded > placessidebar > scrolledwindow > viewport > list.navigation-sidebar > row.activatable > revealer.sidebar-revealer > box {
-  padding-right: 18px;
+  padding-right: 16px;
   padding-left: 0;
 }
 
@@ -4933,13 +4933,13 @@ popover.entry-completion > contents {
 }
 
 .nautilus-window flap.unfolded > placessidebar > scrolledwindow > viewport > list.navigation-sidebar > row.activatable image.sidebar-icon {
-  padding-right: 6px;
+  padding-right: 4px;
 }
 
 .nautilus-window flap.unfolded > placessidebar > scrolledwindow > viewport > list.navigation-sidebar > row.activatable label.sidebar-label {
   color: inherit;
   min-height: 54px;
-  padding-left: 6px;
+  padding-left: 4px;
 }
 
 .nautilus-window flap.unfolded > placessidebar > scrolledwindow > viewport > list.navigation-sidebar > row.activatable.sidebar-placeholder-row {
@@ -4999,7 +4999,7 @@ popover.entry-completion > contents {
 }
 
 .nautilus-window flap.unfolded > placessidebar > scrolledwindow > scrollbar {
-  margin: 3px 3px 3px 0;
+  margin: 2px 2px 2px 0;
   background: none;
   border: none;
 }
@@ -5048,22 +5048,22 @@ popover.entry-completion > contents {
 }
 
 .nautilus-window infobar {
-  margin: 3px;
+  margin: 2px;
 }
 
 .nautilus-window infobar > revealer > box {
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .nautilus-window label.search-information {
-  margin: 3px;
-  border-radius: 6px;
+  margin: 2px;
+  border-radius: 4px;
 }
 
 .nautilus-window .floating-bar {
-  min-height: 28px;
-  padding: 3px;
-  margin: 6px;
+  min-height: 24px;
+  padding: 2px;
+  margin: 4px;
   border: none;
   border-radius: 9999px;
   background-color: rgba(33, 33, 33, 0.95);
@@ -5071,7 +5071,7 @@ popover.entry-completion > contents {
 }
 
 .nautilus-window .floating-bar button {
-  margin: 4px;
+  margin: 5px;
 }
 
 #NautilusViewCell clamp box {
@@ -5082,7 +5082,7 @@ popover.entry-completion > contents {
 #NautilusQueryEditor {
   border-radius: 9999px;
   color: rgba(255, 255, 255, 0.7);
-  padding: 0 4px 0 8px;
+  padding: 0 4px 0 6px;
 }
 
 #NautilusQueryEditor:focus-within {
@@ -5094,8 +5094,8 @@ popover.entry-completion > contents {
 }
 
 #NautilusQueryEditor > menubutton > button.image-button {
-  min-width: 28px;
-  min-height: 28px;
+  min-width: 24px;
+  min-height: 24px;
   margin: 4px 0;
   padding: 0;
 }
@@ -5107,11 +5107,11 @@ popover.entry-completion > contents {
 #NautilusPathBar {
   background-color: rgba(255, 255, 255, 0.04);
   border-radius: 9999px;
-  margin: 6px 0;
+  margin: 4px 0;
 }
 
 #NautilusPathBar #NautilusPathButton {
-  margin: 0 3px;
+  margin: 0 2px;
   border-radius: 9999px;
 }
 
@@ -5137,10 +5137,10 @@ popover.entry-completion > contents {
 }
 
 #NautilusQueryEditorTag > button {
-  margin: 3px;
+  margin: 2px;
   padding: 0;
-  min-height: 22px;
-  min-width: 22px;
+  min-height: 20px;
+  min-width: 20px;
 }
 
 window.dialog > box > stack > box > box > notebook.frame {
@@ -5163,7 +5163,7 @@ window > contents leaflet.unfolded stack.background leaflet + headerbar {
 
 window > contents leaflet.unfolded > separator + box.vertical > headerbar {
   border-top-right-radius: 0;
-  border-top-left-radius: 18px;
+  border-top-left-radius: 16px;
 }
 
 window > contents leaflet > box > scrolledwindow > viewport > widget > stack {
@@ -5217,13 +5217,13 @@ leaflet button.number-button:active {
 }
 
 leaflet button.clear-button.image-button {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 label.primary-label, label.month-name, label.secondary-label {
   font-size: 16pt;
   font-weight: bold;
-  padding: 12px;
+  padding: 8px;
 }
 
 label.primary-label, label.month-name {
@@ -5261,13 +5261,13 @@ popover.events {
 }
 
 popover.events box {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 popover.events list {
   background-color: #2C2C2C;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 popover.events scrolledwindow {
@@ -5275,7 +5275,7 @@ popover.events scrolledwindow {
 }
 
 popover.events button {
-  border-radius: 12px;
+  border-radius: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-style: solid none none;
@@ -5292,22 +5292,22 @@ event widget.content {
 }
 
 event.timed, event:not(.slanted):not(.slanted-start):not(.slanted-end) {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 event.timed widget.edge {
-  border-radius: 6px;
+  border-radius: 5px;
   min-width: 5px;
 }
 
 event.slanted-start, event.slanted-end:dir(rtl) {
-  padding-left: 16px;
-  border-radius: 0 6px 6px 0;
+  padding-left: 12px;
+  border-radius: 0 5px 5px 0;
 }
 
 event.slanted-end, event.slanted-start:dir(rtl) {
-  padding-right: 16px;
-  border-radius: 6px 0 0 6px;
+  padding-right: 12px;
+  border-radius: 5px 0 0 5px;
 }
 
 event:not(.timed).color-dark {
@@ -5364,9 +5364,9 @@ button:checked:not(:backdrop) .calendar-color-image,
 }
 
 datechooser navigator {
-  margin-right: 6px;
-  margin-left: 6px;
-  margin-bottom: 6px;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-bottom: 4px;
 }
 
 datechooser navigator label {
@@ -5374,8 +5374,8 @@ datechooser navigator label {
 }
 
 datechooser navigator button, datechooser navigator button.popup, datechooser navigator button.image-button {
-  min-height: 36px;
-  min-width: 36px;
+  min-height: 32px;
+  min-width: 32px;
   padding: 0;
 }
 
@@ -5387,18 +5387,18 @@ datechooser .weeknum, datechooser .weekday {
 datechooser button.day, datechooser button.day.text-button {
   font-size: 10pt;
   font-weight: normal;
-  margin: 3px;
+  margin: 2px;
   padding: 0;
-  min-height: 36px;
-  min-width: 36px;
+  min-height: 32px;
+  min-width: 32px;
   transition: none;
 }
 
 datechooser button.day dot, datechooser button.day.text-button dot {
   background-color: white;
   border-radius: 50%;
-  min-height: 3px;
-  min-width: 3px;
+  min-height: 2px;
+  min-width: 2px;
 }
 
 datechooser button.day:selected, datechooser button.day.today:selected, datechooser button.day.text-button:selected, datechooser button.day.text-button.today:selected {
@@ -5446,7 +5446,7 @@ datechooser button.day.other-month:hover:not(:backdrop) dot, datechooser button.
 .week-header .week-number {
   font-size: 16pt;
   font-weight: bold;
-  padding: 12px 12px 18px 12px;
+  padding: 8px 8px 12px 8px;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -5462,7 +5462,7 @@ datechooser button.day.other-month:hover:not(:backdrop) dot, datechooser button.
 
 weekhourbar > label {
   font-size: 10pt;
-  padding: 4px 6px;
+  padding: 4px 4px;
 }
 
 .week-view .lines {
@@ -5545,7 +5545,7 @@ monthcell.out-of-month label {
 }
 
 monthcell button {
-  padding: 0 6px;
+  padding: 0 4px;
   border-radius: 0;
   border-bottom: none;
   border-right: none;
@@ -5558,8 +5558,8 @@ monthpopover > box {
 }
 
 .notes-section box > textview {
-  border-radius: 12px;
-  padding: 6px;
+  border-radius: 10px;
+  padding: 4px;
 }
 
 .notes-section box > textview > text {
@@ -5567,11 +5567,11 @@ monthpopover > box {
 }
 
 agenda-view list > row {
-  padding: 2px 12px;
+  padding: 2px 8px;
 }
 
 agenda-view list > label {
-  padding: 6px 12px;
+  padding: 4px 8px;
 }
 
 label.no-events {
@@ -5584,13 +5584,13 @@ searchbutton > popover > arrow {
 }
 
 datechooser {
-  padding: 6px;
+  padding: 4px;
 }
 
 datechooser .current-week {
   background-color: rgba(255, 255, 255, 0.04);
   color: white;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 menubutton.sources-button > button {
@@ -5600,12 +5600,12 @@ menubutton.sources-button > button {
 menubutton.sources-button > button .title {
   font-size: 10pt;
   font-weight: normal;
-  padding: 0 6px;
+  padding: 0 4px;
 }
 
 menubutton.sources-button > button .subtitle {
   font-size: 8pt;
-  padding: 0 6px;
+  padding: 0 4px;
 }
 
 menubutton.sources-button > button .calendar-color-image {
@@ -5613,7 +5613,7 @@ menubutton.sources-button > button .calendar-color-image {
 }
 
 menubutton stack > box {
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 flowboxchild.card {
@@ -5624,14 +5624,14 @@ flowboxchild.card {
 }
 
 flowboxchild > button.card.category-tile {
-  padding: 21px;
+  padding: 14px;
   border: none;
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 flowboxchild > button.card.category-tile-iconless {
-  padding: 9px 15px;
+  padding: 6px 10px;
   box-shadow: none;
   background-color: rgba(255, 255, 255, 0.04);
 }
@@ -5641,7 +5641,7 @@ app-context-bar > box:not(:first-child) > button.flat {
 }
 
 app-context-bar > box:not(:first-child) > button.flat:last-child {
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 10px 10px 0;
 }
 
 app-context-bar > box:first-child > button.flat {
@@ -5649,7 +5649,7 @@ app-context-bar > box:first-child > button.flat {
 }
 
 app-context-bar > box:first-child > button.flat:first-child {
-  border-radius: 12px 0 0 12px;
+  border-radius: 10px 0 0 10px;
 }
 
 app-context-bar > box > button.flat {
@@ -5663,8 +5663,8 @@ carousel.card {
 .context-tile-lozenge {
   min-height: 28px;
   min-width: 28px;
-  padding: 6px;
-  margin: 6px;
+  padding: 4px;
+  margin: 4px;
 }
 
 .context-tile-lozenge.grey {
@@ -5804,8 +5804,8 @@ screenshot-carousel box.frame.view {
 
 window.org-gnome-Builder headerbar splitbutton notification button {
   margin: 0;
-  min-height: 24px;
-  min-width: 24px;
+  min-height: 22px;
+  min-width: 22px;
   padding: 0;
 }
 
@@ -5815,7 +5815,7 @@ popover.background.global-search > contents {
 }
 
 panelframeswitcher {
-  padding: 6px;
+  padding: 4px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -5824,18 +5824,18 @@ panelframetabbar {
 }
 
 .frameheader.header {
-  min-height: 24px;
+  min-height: 22px;
   background-color: rgba(255, 255, 255, 0.04);
 }
 
 .frameheader.header > button {
   border: none;
   margin: 0;
-  padding: 3px;
+  padding: 2px;
 }
 
 .frameheader.header tabbar.inline > revealer > box {
-  min-height: 24px;
+  min-height: 22px;
 }
 
 .frameheader.header tabbar.inline > revealer > box .start-action {
@@ -5849,11 +5849,11 @@ panelframetabbar {
 }
 
 .frameheader.header tabbar.inline > revealer > box .end-action menubutton > button {
-  margin: 3px;
-  min-height: 24px;
-  min-width: 24px;
-  padding: 6px;
-  border-radius: 12px;
+  margin: 2px;
+  min-height: 22px;
+  min-width: 22px;
+  padding: 4px;
+  border-radius: 10px;
 }
 
 .frameheader.header tabbar.inline > revealer > box tabbox {
@@ -5871,7 +5871,7 @@ panelstatusbar > paneltogglebutton button.image-button {
 }
 
 .style-variant {
-  padding: 0 12px;
+  padding: 0 8px;
 }
 
 .style-variant button.toggle {
@@ -5886,10 +5886,10 @@ panelstatusbar > paneltogglebutton button.image-button {
 }
 
 .style-variant button.toggle > stylevariantpreview > .wallpaper {
-  border-radius: 12px;
+  border-radius: 10px;
   outline-color: transparent;
   outline-width: 3px;
-  outline-offset: 3px;
+  outline-offset: 2px;
   outline-style: solid;
   box-shadow: none;
 }
@@ -6080,7 +6080,7 @@ button.font separator {
 }
 
 button.font > box {
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 button.font > box > box > label {
@@ -6145,7 +6145,7 @@ menubutton.opaque {
 }
 
 menubutton.suggested-action, menubutton.destructive-action, menubutton.opaque {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 menubutton.suggested-action.circular, menubutton.suggested-action.pill, menubutton.destructive-action.circular, menubutton.destructive-action.pill, menubutton.opaque.circular, menubutton.opaque.pill {
@@ -6159,8 +6159,8 @@ menubutton.suggested-action > button, menubutton.suggested-action > button:check
 
 menubutton.image-button > button {
   min-width: 24px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 menubutton arrow {
@@ -6189,7 +6189,7 @@ menubutton arrow.right {
 }
 
 splitbutton {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 splitbutton:disabled {
@@ -6203,29 +6203,29 @@ splitbutton, splitbutton > separator {
 }
 
 splitbutton > separator {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   background: none;
 }
 
 splitbutton > menubutton > button {
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 splitbutton.image-button > button {
   min-height: 24px;
   min-width: 24px;
-  padding: 6px;
+  padding: 4px;
 }
 
 splitbutton.text-button.image-button > button, splitbutton.image-text-button > button {
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 splitbutton.text-button.image-button > button > box, splitbutton.image-text-button > button > box {
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 splitbutton > button:dir(ltr),
@@ -6261,7 +6261,7 @@ splitbutton.flat:focus-within:focus-visible > separator {
 
 splitbutton.flat > button,
 splitbutton.flat > menubutton > button {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 splitbutton.suggested-action {
@@ -6297,7 +6297,7 @@ splitbutton > menubutton > button > arrow.none {
 }
 
 buttoncontent {
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 buttoncontent > label {
@@ -6321,35 +6321,35 @@ buttoncontent > label:dir(rtl) {
 }
 
 toast {
-  margin: 12px;
+  margin: 8px;
   margin-bottom: 24px;
   border-radius: 9999px;
-  border-spacing: 6px;
-  padding: 6px;
+  border-spacing: 4px;
+  padding: 4px;
   box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 11px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.7);
   font-weight: normal;
 }
 
 toast:dir(ltr) {
-  padding-left: 12px;
+  padding-left: 8px;
 }
 
 toast:dir(rtl) {
-  padding-right: 12px;
+  padding-right: 8px;
 }
 
 toast > widget {
-  margin: 0 6px;
+  margin: 0 4px;
 }
 
 statuspage > scrolledwindow > viewport > box {
-  margin: 36px 12px;
+  margin: 24px 8px;
   border-spacing: 36px;
 }
 
 statuspage > scrolledwindow > viewport > box > clamp > box {
-  border-spacing: 12px;
+  border-spacing: 8px;
 }
 
 statuspage > scrolledwindow > viewport > box > clamp > box > .icon {
@@ -6362,12 +6362,12 @@ statuspage > scrolledwindow > viewport > box > clamp > box > .icon:disabled {
 }
 
 statuspage > scrolledwindow > viewport > box > clamp > box > .icon:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 statuspage.compact > scrolledwindow > viewport > box {
-  margin: 24px 12px;
-  border-spacing: 24px;
+  margin: 16px 8px;
+  border-spacing: 16px;
 }
 
 statuspage.compact > scrolledwindow > viewport > box > clamp > box > .icon {
@@ -6375,7 +6375,7 @@ statuspage.compact > scrolledwindow > viewport > box > clamp > box > .icon {
 }
 
 statuspage.compact > scrolledwindow > viewport > box > clamp > box > .icon:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 statuspage.compact > scrolledwindow > viewport > box > clamp > box > .title {
@@ -6384,7 +6384,7 @@ statuspage.compact > scrolledwindow > viewport > box > clamp > box > .title {
 
 .card, list.content,
 list.boxed-list {
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: none;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background-clip: padding-box;
@@ -6393,20 +6393,20 @@ list.boxed-list {
 }
 
 preferencespage > scrolledwindow > viewport > clamp > box {
-  margin: 24px 12px;
-  border-spacing: 24px;
+  margin: 16px 8px;
+  border-spacing: 16px;
 }
 
 preferencesgroup > box, preferencesgroup > box .labels {
-  border-spacing: 6px;
+  border-spacing: 4px;
 }
 
 preferencesgroup > box > box.header:not(.single-line) {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 preferencesgroup > box > box.single-line {
-  min-height: 36px;
+  min-height: 32px;
 }
 
 preferencesgroup > box button.background-preview-button.toggle {
@@ -6415,7 +6415,7 @@ preferencesgroup > box button.background-preview-button.toggle {
   box-shadow: none;
   outline-color: transparent;
   outline-width: 3px;
-  outline-offset: 3px;
+  outline-offset: 2px;
   outline-style: solid;
 }
 
@@ -6443,8 +6443,8 @@ viewswitcher.wide {
   border-spacing: 0;
   border-radius: 9999px;
   background-color: rgba(255, 255, 255, 0.04);
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 viewswitcher.wide button.toggle:checked, viewswitcher.wide button.toggle.flat:checked {
@@ -6479,19 +6479,19 @@ viewswitcher button.toggle {
 
 viewswitcher button.toggle > stack > box.narrow {
   font-size: 0.75rem;
-  padding-top: 7px;
-  padding-bottom: 5px;
-  border-spacing: 4px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  border-spacing: 2px;
 }
 
 viewswitcher button.toggle > stack > box.narrow > stack > label {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 viewswitcher button.toggle > stack > box.wide {
-  padding: 0 12px;
-  border-spacing: 6px;
+  padding: 0 8px;
+  border-spacing: 4px;
 }
 
 viewswitcherbar actionbar > revealer > box {
@@ -6499,13 +6499,13 @@ viewswitcherbar actionbar > revealer > box {
 }
 
 viewswitchertitle viewswitcher {
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 indicatorbin > indicator, indicatorbin > mask {
-  min-width: 6px;
-  min-height: 6px;
+  min-width: 4px;
+  min-height: 4px;
   border-radius: 9999px;
 }
 
@@ -6536,7 +6536,7 @@ indicatorbin.needs-attention > indicator > label {
 }
 
 tabbar .box {
-  min-height: 28px;
+  min-height: 24px;
   background-color: #212121;
   color: rgba(255, 255, 255, 0.7);
   padding: 0;
@@ -6555,8 +6555,8 @@ tabbar tabbox > tabboxchild {
 }
 
 tabbar tabbox > separator {
-  margin-top: 9px;
-  margin-bottom: 9px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   transition: opacity 150ms ease-in-out;
 }
 
@@ -6567,17 +6567,17 @@ tabbar tabbox > separator.hidden {
 tabbar tabbox > revealer > indicator {
   min-width: 2px;
   border-radius: 2px;
-  margin: 9px 6px;
+  margin: 6px 4px;
   background: alpha(#3281EA, 0.5);
 }
 
 tabbar tab {
   transition: none;
-  border-radius: 12px 12px 0 0;
+  border-radius: 10px 10px 0 0;
   border: 1px solid transparent;
   border-bottom-width: 0;
   color: rgba(255, 255, 255, 0.7);
-  padding: 6px 12px;
+  padding: 4px 8px;
 }
 
 tabbar tab:hover:not(:selected):not(:active):not(:checked) {
@@ -6586,7 +6586,7 @@ tabbar tab:hover:not(:selected):not(:active):not(:checked) {
   box-shadow: none;
   color: white;
   border-color: #404040;
-  border-radius: 12px 12px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 tabbar tab:selected, tabbar tab:checked, tabbar tab:active {
@@ -6595,7 +6595,7 @@ tabbar tab:selected, tabbar tab:checked, tabbar tab:active {
   box-shadow: none;
   color: white;
   border-color: #404040;
-  border-radius: 12px 12px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 tabbar .start-action,
@@ -6621,7 +6621,7 @@ dnd tab {
   background-color: #212121;
   color: rgba(255, 255, 255, 0.7);
   box-shadow: none;
-  margin: 24px;
+  margin: 16px;
 }
 
 tabbar tab button.image-button,
@@ -6819,7 +6819,7 @@ overlay-split-view > shadow.down {
 }
 
 .sidebar-pane:dir(ltr), .sidebar-pane.end:dir(rtl) {
-  border-top-left-radius: 18px;
+  border-top-left-radius: 16px;
 }
 
 .sidebar-pane:dir(ltr), .sidebar-pane:dir(ltr) banner > revealer > widget, .sidebar-pane.end:dir(rtl), .sidebar-pane.end:dir(rtl) banner > revealer > widget {
@@ -6827,7 +6827,7 @@ overlay-split-view > shadow.down {
 }
 
 .sidebar-pane:dir(rtl), .sidebar-pane.end:dir(ltr) {
-  border-top-right-radius: 18px;
+  border-top-right-radius: 16px;
 }
 
 .sidebar-pane:dir(rtl), .sidebar-pane:dir(rtl) banner > revealer > widget, .sidebar-pane.end:dir(ltr), .sidebar-pane.end:dir(ltr) banner > revealer > widget {

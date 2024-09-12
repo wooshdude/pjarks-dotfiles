@@ -343,8 +343,6 @@ StScrollBar StButton#hhandle:active {
   border-radius: 12px;
   background-color: #292c3c;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
-  border: 2px solid #cba6f7;
-  background-clip: border-box;
 }
 
 .menu .popup-menu-item,
@@ -405,7 +403,6 @@ StScrollBar StButton#hhandle:active {
 
 .popup-combo-menu {
   padding: 6px;
-  border: 2px solid #cba6f7;
 }
 
 .popup-combobox-item {
@@ -1846,7 +1843,6 @@ StScrollBar StButton#hhandle:active {
   border-radius: 12px;
   background-clip: border-box;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
-  border: 2px solid #cba6f7;
 }
 
 .grouped-window-list-thumbnail-menu .item-box {

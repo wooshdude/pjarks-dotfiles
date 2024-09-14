@@ -1410,8 +1410,9 @@ searchbar > revealer > box {
 }
 
 .titlebar .title {
-  padding: 0 12px;
+  padding: 0 100px;
   font-weight: bold;
+
 }
 
 .titlebar .subtitle {

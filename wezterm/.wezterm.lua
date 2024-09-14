@@ -13,7 +13,7 @@ end
 
 -- For example, changing the color scheme:
 config.color_scheme = "Catppuccin Mocha"
-config.font_size = 12
+config.font_size = 11
 
 config.window_decorations = "TITLE | RESIZE"
 

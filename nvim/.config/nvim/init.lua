@@ -127,7 +127,7 @@ local function set_rust_keybindings()
 	vim.keymap.set(
 		"n",
 		"<leader>vv",
-		":terminal cargo run<Return>i",
+		":terminal cargo run<Return>",
 		{ desc = "Cargo Run", buffer = true, silent = true }
 	)
 end
@@ -137,7 +137,7 @@ local function set_python_keybindings()
 	vim.keymap.set(
 		"n",
 		"<leader>vv",
-		":terminal python3 main.py<Return>i",
+		":terminal python3 main.py<Return>",
 		{ desc = "Python Run", buffer = true, silent = true }
 	)
 end
@@ -146,7 +146,7 @@ local function set_csharp_keybindings()
 	vim.keymap.set(
 		"n",
 		"<leader>vv",
-		":terminal dotnet run<Return>i",
+		":terminal dotnet run<Return>",
 		{ desc = "DotNet Run", buffer = true, silent = true }
 	)
 end
@@ -210,6 +210,12 @@ vim.opt.rtp:prepend(lazypath)
 --  PLUGINS
 
 require("lazy").setup({
+	{
+		"OmniSharp/omnisharp-vim",
+		init = function()
+			vim.g.OmniSharp_server_use_net6 = 1
+		end,
+	},
 	{
 		"rmagatti/auto-session",
 		lazy = false,
@@ -730,9 +736,9 @@ require("lazy").setup({
 
 				mapping = cmp.mapping.preset.insert({
 					-- Select the [n]ext item
-					["<C-n>"] = cmp.mapping.select_next_item(),
+					["<S-j>"] = cmp.mapping.select_next_item(),
 					-- Select the [p]revious item
-					["<C-p>"] = cmp.mapping.select_prev_item(),
+					["<S-k>"] = cmp.mapping.select_prev_item(),
 
 					-- Scroll the documentation window [b]ack / [f]orward
 					["<C-b>"] = cmp.mapping.scroll_docs(-4),

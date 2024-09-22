@@ -3,7 +3,7 @@ local wezterm = require("wezterm")
 
 -- This table will hold the configuration.
 local config = {}
-
+config.enable_wayland = false
 config.default_prog = { "usr/bin/zsh", "-l" }
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages

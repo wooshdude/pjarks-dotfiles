@@ -13,9 +13,10 @@ end
 
 -- For example, changing the color scheme:
 config.color_scheme = "Catppuccin Mocha"
-config.font_size = 11
+config.font_size = 14
 
-config.window_decorations = "TITLE | RESIZE"
+-- config.window_decorations = "TITLE | RESIZE"
+config.window_decorations = "RESIZE"
 
 -- tmux
 config.keys = {

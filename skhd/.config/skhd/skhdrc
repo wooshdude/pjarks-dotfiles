@@ -1,0 +1,17 @@
+# change window focus
+cmd - j : yabai -m window --focus south
+cmd - k : yabai -m window --focus north
+cmd - h : yabai -m window --focus west
+cmd - l : yabai -m window --focus east
+
+# modify layout
+shift + cmd - r : yabai -m space --rotate 270
+shift + cmd - y : yabai -m space --mirror y-axis
+shift + cmd - x : yabai -m space --mirror x-axis
+shift + cmd - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# maximize a window
+shift + cmd - f : yabai -m window --toggle zoom-fullscreen
+
+# balance windows
+shift + cmd - b : yabai -m space --balance

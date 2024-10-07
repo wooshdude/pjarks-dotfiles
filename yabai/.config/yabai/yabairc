@@ -1,0 +1,33 @@
+yabai -m config layout bsp
+
+yabai -m config window_placement second_child
+
+# padding
+yabai -m config top_padding 16
+yabai -m config bottom_padding 16
+yabai -m config left_padding 16
+yabai -m config right_padding 16
+yabai -m config window_gap 18
+
+# mouse settings
+#yabai -m config focus_follows_mouse autoraise
+yabai -m config focus_follows_mouse on
+
+yabai -m config mouse_modifier cmd
+yabai -m config mouse_action1 move
+yabai -m mouse_action2 resize
+
+yabai -m mouse_drop_action swap
+
+# ignore apps
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^love$" manage=off
+yabai -m rule --add app="^Messages$" manage=off
+
+# include apps
+yabai -m rule --add app="^Unity$" manage=on
+
+# yabai -m config external_bar all:8:0
+
+borders active_color=0xffc6a0f6 inactive_color=0xff24273a width=10.0 blacklist="iPhone Mirroring"&

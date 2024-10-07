@@ -99,6 +99,14 @@ vim.keymap.set("i", "jj", "<Esc>", { desc = "Exit insert mode", silent = true })
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
 
+-- Vertical navigation
+vim.keymap.set("n", "<S-j>", "10j", { desc = "Jump ten spaces down", silent = true })
+vim.keymap.set("n", "<S-k>", "10k", { desc = "Jump ten spaces up", silent = true })
+
+-- Horizontal navigation
+vim.keymap.set("n", "<C-i>", "^", { desc = "Jump to start of line", silent = true })
+vim.keymap.set("n", "<C-a>", "$", { desc = "Jump to end of line", silent = true })
+
 -- Telescope
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<Return>", { desc = "Find Files", silent = true })
 
@@ -210,6 +218,35 @@ vim.opt.rtp:prepend(lazypath)
 --  PLUGINS
 
 require("lazy").setup({
+	{
+		"arminveres/md-pdf.nvim",
+		branch = "main", -- you can assume that main is somewhat stable until releases will be made
+		lazy = true,
+		keys = {
+			{
+				"<leader>,",
+				function()
+					require("md-pdf").convert_md_to_pdf()
+				end,
+				desc = "Markdown preview",
+			},
+		},
+		opts = {},
+	},
+	{
+		"MeanderingProgrammer/render-markdown.nvim",
+		opts = {},
+		dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
+		-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+		-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+	},
+	{
+		"tadmccorkle/markdown.nvim",
+		ft = "markdown", -- or 'event = "VeryLazy"'
+		opts = {
+			-- configuration here or empty for defaults
+		},
+	},
 	{
 		"OmniSharp/omnisharp-vim",
 		init = function()
@@ -736,9 +773,9 @@ require("lazy").setup({
 
 				mapping = cmp.mapping.preset.insert({
 					-- Select the [n]ext item
-					["<S-j>"] = cmp.mapping.select_next_item(),
+					["<C-j>"] = cmp.mapping.select_next_item(),
 					-- Select the [p]revious item
-					["<S-k>"] = cmp.mapping.select_prev_item(),
+					["<C-k>"] = cmp.mapping.select_prev_item(),
 
 					-- Scroll the documentation window [b]ack / [f]orward
 					["<C-b>"] = cmp.mapping.scroll_docs(-4),

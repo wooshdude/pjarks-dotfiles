@@ -4,6 +4,10 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
@@ -150,6 +154,11 @@ local function set_python_keybindings()
 	)
 end
 
+-- Go run
+local function set_go_keybindings()
+	vim.keymap.set("n", "<leader>vv", ":terminal go run .<Return>", { desc = "Go Run", buffer = true, silent = true })
+end
+
 local function set_csharp_keybindings()
 	vim.keymap.set(
 		"n",
@@ -179,6 +188,13 @@ vim.api.nvim_create_autocmd("FileType", {
 	pattern = "cs",
 	callback = set_csharp_keybindings,
 	group = "CSharpKeybindings",
+})
+
+vim.api.nvim_create_augroup("GoKeybindings", { clear = true })
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "go",
+	callback = set_go_keybindings,
+	group = "GoKeybindings",
 })
 
 -- Nvim Tree

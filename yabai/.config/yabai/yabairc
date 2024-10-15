@@ -30,4 +30,5 @@ yabai -m rule --add app="^Unity$" manage=on
 
 # yabai -m config external_bar all:8:0
 
-borders active_color=0xffc6a0f6 inactive_color=0xff24273a width=10.0 blacklist="iPhone Mirroring"&
+# borders active_color=0xffc6a0f6 inactive_color=0xff24273a width=10.0 blacklist="iPhone Mirroring"&
+sh border

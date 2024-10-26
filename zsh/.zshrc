@@ -1,2 +1,6 @@
-export EDITOR="/usr/bin/nvim"
+export EDITOR="/usr/local/bin/nvim"
+export DOTNET_ROOT="/usr/local/share/dotnet"
+alias py="python3"
+alias pip="python3 -m pip"
+alias border="sh border"
 eval "$(starship init zsh)"

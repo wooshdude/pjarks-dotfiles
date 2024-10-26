@@ -20,6 +20,7 @@ $nodejs\
 $nim\
 $rust\
 $scala\
+$python\
 [](fg:#86BBD8 bg:#06969A)\
 $docker_context\
 [](fg:#06969A bg:#33658A)\
@@ -104,6 +105,12 @@ symbol = " "
 style = "bg:#86BBD8 fg:#33658A"
 format = '[ $symbol ($version) ]($style)'
 
+[python]
+symbol = " "
+style = "bg:#86BBD8 fg:#33658A"
+format = '[ ${symbol} ${pyenv_prefix}(${version} )]($style)'
+detect_extensions = []
+
 [gradle]
 style = "bg:#86BBD8 fg:#33658A"
 format = '[ $symbol ($version) ]($style)'
@@ -134,7 +141,7 @@ style = "bg:#86BBD8 fg:#33658A"
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
-symbol = ""
+symbol = " "
 style = "bg:#86BBD8 fg:#33658A"
 format = '[ $symbol ($version) ]($style)'
 

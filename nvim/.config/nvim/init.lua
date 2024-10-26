@@ -3,8 +3,8 @@
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
 vim.opt.tabstop = 4
+
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
@@ -231,24 +231,38 @@ if not vim.uv.fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
+local colors = {
+	blue = "#89b4fa",
+	cyan = "#74c7ec",
+	crust = "#11111b",
+	white = "#cdd6f4",
+	red = "#f38ba8",
+	violet = "#cba6f7",
+	surface = "#313244",
+	base = "#1e1e2e",
+}
+
+local bubbles_theme = {
+	normal = {
+		a = { fg = colors.crust, bg = colors.blue },
+		b = { fg = colors.blue, bg = colors.surface },
+		c = { fg = colors.white },
+	},
+
+	insert = { a = { fg = colors.crust, bg = colors.green } },
+	visual = { a = { fg = colors.crust, bg = colors.violet } },
+	replace = { a = { fg = colors.crust, bg = colors.red } },
+
+	inactive = {
+		a = { fg = colors.white, bg = colors.crust },
+		b = { fg = colors.white, bg = colors.crust },
+		c = { fg = colors.white },
+	},
+}
+
 --  PLUGINS
 
 require("lazy").setup({
-	{
-		"arminveres/md-pdf.nvim",
-		branch = "main", -- you can assume that main is somewhat stable until releases will be made
-		lazy = true,
-		keys = {
-			{
-				"<leader>,",
-				function()
-					require("md-pdf").convert_md_to_pdf()
-				end,
-				desc = "Markdown preview",
-			},
-		},
-		opts = {},
-	},
 	{
 		"MeanderingProgrammer/render-markdown.nvim",
 		opts = {},
@@ -278,6 +292,9 @@ require("lazy").setup({
 		---@type AutoSession.Config
 		opts = {
 			suppressed_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
+			auto_save = true,
+			auto_create = true,
+			auto_restore = true,
 			-- log_level = 'debug',
 		},
 	},
@@ -332,7 +349,40 @@ require("lazy").setup({
 	{
 		"nvim-lualine/lualine.nvim",
 		config = function()
-			require("lualine").setup({})
+			require("lualine").setup({
+				options = {
+					--theme = bubbles_theme,
+					component_separators = "",
+					section_separators = { left = "", right = "" },
+				},
+				sections = {
+					lualine_a = {
+						{ "mode", separator = { left = "", right = "" }, right_padding = 2 },
+					},
+					lualine_b = {
+						"filename",
+						"branch",
+					},
+					lualine_c = {
+						"diagnostics",
+					},
+					lualine_x = { "filetype" },
+					lualine_y = { "progress" },
+					lualine_z = {
+						{ "location", separator = { left = "", right = "" }, left_padding = 0 },
+					},
+				},
+				inactive_sections = {
+					lualine_a = { "filename" },
+					lualine_b = {},
+					lualine_c = {},
+					lualine_x = {},
+					lualine_y = {},
+					lualine_z = { "location" },
+				},
+				tabline = {},
+				extensions = {},
+			})
 		end,
 	},
 	{ "catppuccin/nvim" },
@@ -630,6 +680,13 @@ require("lazy").setup({
 			local capabilities = vim.lsp.protocol.make_client_capabilities()
 			capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
+			-- require("lspconfig").gdscript.setup({
+			-- 	cmd = { "nc", "localhost", "6005" }, -- Replace "localhost" if Godot is on another machine
+			-- 	filetypes = { "gd", "gdscript" },
+			-- 	root_dir = function()
+			-- 		return vim.fn.getcwd()
+			-- 	end,
+			-- })
 			-- Enable the following language servers
 			--  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
 			--
@@ -641,9 +698,15 @@ require("lazy").setup({
 			--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 			local servers = {
 				-- clangd = {},
-				-- gopls = {},
-				-- pyright = {},
-				-- rust_analyzer = {},
+				gopls = {},
+				rust_analyzer = {},
+				gdtoolkit = {
+					cmd = { "nc", "localhost", "6005" },
+					filetypes = { "gd", "gdscript" },
+					root_dir = function()
+						return vim.fn.getcwd()
+					end,
+				},
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 				--
 				-- Some languages (like typescript) have entire language plugins that can be useful:
@@ -652,7 +715,6 @@ require("lazy").setup({
 				-- But for many setups, the LSP (`tsserver`) will work just fine
 				-- tsserver = {},
 				--
-
 				lua_ls = {
 					-- cmd = {...},
 					-- filetypes = { ...},

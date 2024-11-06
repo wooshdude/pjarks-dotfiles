@@ -8,6 +8,9 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "vim_mode": true,
+  "scrollbar": {
+    "show": "never"
+  },
   "vim": {
     "toggle_relative_line_numbers": true
   },
@@ -32,6 +35,11 @@
   "theme": {
     "mode": "dark",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha (Blur)"
-  }
+    "dark": "Catppuccin Mocha"
+  },
+  "ui_font_family": "JetBrainsMono Nerd Font Mono",
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font Mono"
+  },
+  "hard_tabs": true
 }

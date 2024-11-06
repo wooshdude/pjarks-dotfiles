@@ -1,0 +1,36 @@
+{
+  "languageserver": {
+    "godot": {
+      "host": "127.0.0.1",
+      "filetypes": ["gdscript"],
+      "port": 6005
+    }
+  },
+  "coc.preferences.formatOnSave": true,
+  "suggest.floatConfig": {
+    "border": true,
+    "rounded": true
+  },
+  "semanticTokens.enable": true,
+  "suggest.completionItemKindLabels": {
+    "class": "󰆧 ",
+    "text": "󰦨 ",
+    "function": "󰊕 ",
+    "method": "󰊕 ",
+    "constructor": "󰊕 ",
+    "property": " ",
+    "variable": " ",
+    "enum": "󱃖 ",
+    "value": " ",
+    "field": " ",
+    "constant": " ",
+    "event": " ",
+    "operator": " ",
+    "snippet": " ",
+    "struct": "󰆧  ",
+    "color": " ",
+    "folder": " ",
+    "file": " ",
+    "interface": "󱃖 "
+  }
+}

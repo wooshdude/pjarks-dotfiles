@@ -15,3 +15,8 @@ shift + cmd - f : yabai -m window --toggle zoom-fullscreen
 
 # balance windows
 shift + cmd - b : yabai -m space --balance
+
+# remember float setting
+fn - t : app=$(yabai -m query --windows --window mouse | jq -r '.app' | tr ' ' '_');\
+	yabai -m window --toggle float;\
+	yabai -m signal --remove autofloat_$app || yabai -m signal --add event=window_created app=$app label=autofloat_$app action="yabai -m window $YABAI_WINDOW_ID --toggle float"

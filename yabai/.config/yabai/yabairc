@@ -19,11 +19,18 @@ yabai -m mouse_action2 resize
 
 yabai -m mouse_drop_action swap
 
-# ignore apps
+# manage apps
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^love$" manage=off
 yabai -m rule --add app="^Messages$" manage=off
+
+yabai -m rule --add app="Godot" manage=on
+yabai -m rule --add app="Godot" title=".*\(DEBUG\).*" manage=off
+yabai -m rule --add app="Godot" title=".*Settings.*" manage=off
+yabai -m rule --add app="Godot" title=".*Create.*" manage=off
+yabai -m rule --add app="Godot" title="Please Confirm..." manage=off
+yabai -m rule --add app="Godot" title=".*Save.*" manage=off
 
 # include apps
 yabai -m rule --add app="^Unity$" manage=on

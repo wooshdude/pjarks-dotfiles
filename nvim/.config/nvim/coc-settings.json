@@ -32,5 +32,17 @@
     "folder": " ",
     "file": " ",
     "interface": "󱃖 "
-  }
+  },
+  "coc.source.OmniSharp.enable": true,
+  "omnisharp.trace.server": "information",
+  "omnisharp.debug.server": true,
+  "omnisharp.path": "/usr/local/bin/omnisharp",
+  "diagnostic.enableMessage": "never",
+  "diagnostic.enable": true,
+  "diagnostic.errorSign": "✗",
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.infoSign": "ℹ",
+  "diagnostic.hintSign": "➤",
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": true
 }

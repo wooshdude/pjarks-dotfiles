@@ -125,7 +125,7 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 
 -- Buffers
 vim.keymap.set("n", "tt", ":tabedit<Return><leader>n", { desc = "Create a new tab", silent = true })
-vim.keymap.set("n", "te", ":BufferClose<Return>", { desc = "Close current tab", silent = true })
+vim.keymap.set("n", "te", ":BufferClose!<Return>", { desc = "Close current tab", silent = true })
 vim.keymap.set("n", "<tab>", ":BufferNext<Return>", { desc = "Next tab", silent = true })
 vim.keymap.set("n", "<S-tab>", ":BufferPrevious<Return>", { desc = "Previous tab", silent = true })
 vim.keymap.set("n", "tl", ":BufferMoveNext<Return>", { desc = "Shift tab right", silent = true })
@@ -202,7 +202,7 @@ if vim.env.TMUX ~= nil then
     pattern = "*",
     callback = function()
       local current_file = vim.fn.expand("%:t")
-      local tmux_command = string.format("tmux rename-window '📄 nvim - %s'", current_file)
+      local tmux_command = string.format("tmux rename-window 'nvim'", current_file)
       vim.fn.system(tmux_command)
     end
   })
@@ -298,12 +298,6 @@ require("lazy").setup({
     },
   },
   {
-    "OmniSharp/omnisharp-vim",
-    init = function()
-      vim.g.OmniSharp_server_use_net6 = 1
-    end,
-  },
-  {
     "rmagatti/auto-session",
     lazy = false,
 
@@ -352,13 +346,18 @@ require("lazy").setup({
   },
   {
     "romgrk/barbar.nvim",
+    config = function()
+      icons = {
+        button = "",
+        separator = { left = '', right = '' },
+      }
+
+      vim.g.barbar_auto_setup = false
+    end,
     dependencies = {
       "lewis6991/gitsigns.nvim",     -- OPTIONAL: for git status
       "nvim-tree/nvim-web-devicons", -- OPTIONAL: for file icons
     },
-    init = function()
-      vim.g.barbar_auto_setup = false
-    end,
     opts = {
       -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
       -- animation = true,
@@ -564,7 +563,32 @@ require("lazy").setup({
   },
 
   -- LSP Plugins
-  --{ "dense-analysis/ale" },
+  {
+    "OmniSharp/omnisharp-vim",
+    config = function()
+      vim.g.OmniSharp_server_use_net6 = 1
+      vim.g.OmniSharp_server_use_mono = 1
+      vim.g.Omnisharp_highlighting = 3
+      vim.g.OmniSharp_diagnostic_showid = 0
+      vim.g.OmniSharp_diagnostic_overrides = {
+        CS8019 = { type = 'None' },
+      }
+    end,
+  },
+  {
+    "dense-analysis/ale",
+    config = function()
+      vim.g.ale_sign_column_always = 1
+      vim.g.ale_sign_error = ' '
+      vim.g.ale_sign_warning = ' '
+      vim.b.ale_linters = { cs = { "OmniSharp" } }
+      vim.g.ale_linters_explicit = 1
+      vim.g.ale_echo_msg_error_str = ' '
+      vim.g.ale_echo_msg_warning_str = ' '
+      vim.g.ale_cs_csc_assemblies = { ".mono" }
+      vim.g.ale_cs_mcsc_assemblies = { ".mono" }
+    end
+  },
   {
     "neoclide/coc.nvim",
     branch = "release",

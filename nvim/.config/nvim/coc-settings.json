@@ -4,12 +4,18 @@
       "host": "127.0.0.1",
       "filetypes": ["gdscript"],
       "port": 6005
+    },
+    "csharp-ls": {
+      "command": "csharp",
+      "filetypes": ["cs"],
+      "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
     }
   },
   "coc.preferences.formatOnSave": true,
   "suggest.floatConfig": {
     "border": true,
-    "rounded": true
+    "rounded": true,
+    "maxHeight": 10
   },
   "semanticTokens.enable": true,
   "suggest.completionItemKindLabels": {
@@ -33,16 +39,13 @@
     "file": " ",
     "interface": "󱃖 "
   },
-  "coc.source.OmniSharp.enable": true,
-  "omnisharp.trace.server": "information",
-  "omnisharp.debug.server": true,
-  "omnisharp.path": "/usr/local/bin/omnisharp",
   "diagnostic.enableMessage": "never",
   "diagnostic.enable": true,
-  "diagnostic.errorSign": "✗",
-  "diagnostic.warningSign": "⚠",
+  "diagnostic.errorSign": " ",
+  "diagnostic.warningSign": " ",
   "diagnostic.infoSign": "ℹ",
   "diagnostic.hintSign": "➤",
   "diagnostic.virtualText": true,
+  "diagnostic.virtualTextAlign": "below",
   "diagnostic.virtualTextCurrentLineOnly": true
 }
